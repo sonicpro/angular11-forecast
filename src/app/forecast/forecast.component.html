@@ -1,0 +1,3 @@
+<ul className="list-group">
+  <li className="list-group-item" *ngFor="let day of forecasts$ | async">{{day.dt}}</li>
+</ul>
