@@ -1,3 +1,9 @@
+@mixin before {
+  position: absolute;
+  top: 2px;
+  left: 5px;
+}
+
 .list-group {
   padding-left: 0;
   margin-bottom: 20px;
@@ -11,21 +17,24 @@
 .list-group-item {
   position: relative;
   display: block;
-  padding: 10px 15px;
+  padding: 57px 143px;
   margin-bottom: -1px;
   background-color: #fff;
   border: 1px solid #ddd;
-  cursor: pointer;
 }
 
 .sunny::before {
   content: url("../assets/sun.png");
+  @include before;
 }
 
 .cloudy::before {
   content: url("../assets/cloudy.png");
+  @include before;
 }
 
 .rain::before {
   content: url("../assets/rain.png");
+  @include before;
 }
+

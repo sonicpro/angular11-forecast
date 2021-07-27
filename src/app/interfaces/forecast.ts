@@ -1,6 +1,6 @@
-import { Weather } from "./weather";
+import { Weather } from './weather';
 
 export interface Forecast {
-  dt: number,
-  weather: Weather[]
+  dt: number;
+  weather: Weather[];
 }

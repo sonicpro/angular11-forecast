@@ -10,7 +10,7 @@ import { Forecast, Weather } from '../interfaces';
   styleUrls: ['./forecast.component.scss']
 })
 export class ForecastComponent implements AfterViewInit {
-  forecasts$: Observable<Forecast[]> =  this.fetchService.createHttpObservable("http://localhost:5000/api/forecast/Kharkiv");
+  forecasts$: Observable<Forecast[]> =  this.fetchService.createHttpObservable('http://localhost:5000/api/forecast/Kharkiv');
 
   constructor(private fetchService: FetchWrapperService, private dateTimeService: DateTimeService) { }
 

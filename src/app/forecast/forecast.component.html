@@ -1,3 +1,3 @@
 <ul class="list-group">
-  <li class="list-group-item" *ngFor="let day of forecasts$ | async">{{fromUnixTimeSeconds(day.dt)}}</li>
+  <li class="list-group-item" *ngFor="let day of forecasts$ | async" [ngClass]="{'sunny': day.weather[0].main === 'Clear', 'cloudy': day.weather[0].main === 'Clouds', 'rain': day.weather[0].main === 'Rain' || day.weather[0].main === 'Snow'}">{{fromUnixTimeSeconds(day.dt)}}</li>
 </ul>
