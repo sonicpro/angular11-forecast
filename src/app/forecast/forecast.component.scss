@@ -17,3 +17,15 @@
   border: 1px solid #ddd;
   cursor: pointer;
 }
+
+.sunny::before {
+  content: url("../assets/sun.png");
+}
+
+.cloudy::before {
+  content: url("../assets/cloudy.png");
+}
+
+.rain::before {
+  content: url("../assets/rain.png");
+}
