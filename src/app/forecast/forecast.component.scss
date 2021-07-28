@@ -38,3 +38,10 @@
   @include before;
 }
 
+.page-wrapper {
+  padding: 15px 50px;
+}
+
+mat-form-field {
+  margin-left: 40px;
+}
