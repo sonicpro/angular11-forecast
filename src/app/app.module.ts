@@ -7,6 +7,7 @@ import { ForecastComponent } from './forecast/forecast.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { MatInputModule } from '@angular/material/input';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
