@@ -8,9 +8,9 @@ describe('workspace-project App', () => {
     page = new AppPage();
   });
 
-  it('should display welcome message', async () => {
+  it('should display default search text', async () => {
     await page.navigateTo();
-    expect(await page.getTitleText()).toEqual('angular11-forecast app is running!');
+    expect(await page.getSearchText()).toEqual('Kharkiv');
   });
 
   afterEach(async () => {
