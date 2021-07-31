@@ -1,6 +1,9 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 import { ForecastComponent } from './forecast.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 describe('ForecastComponent', () => {
   let component: ForecastComponent;
@@ -8,9 +11,15 @@ describe('ForecastComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ForecastComponent ]
+      declarations: [ ForecastComponent ],
+      imports: [
+        MatSnackBarModule,
+        MatFormFieldModule,
+        MatInputModule,
+        BrowserAnimationsModule
+      ]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {
